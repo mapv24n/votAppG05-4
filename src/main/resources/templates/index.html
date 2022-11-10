@@ -1,0 +1,110 @@
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:th="http://www.thymeleaf.org"
+	xmlns:sec="http://www.thymeleaf.org/thymeleaf-extras-springsecurity3"
+	xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout">
+
+<head>
+	<title>votApp v1.0</title>
+	<meta charset="utf-8" content="Aplicación Web para el registro de votos">
+	<link rel="stylesheet" type="text/css" th:href="@{/css/bootstrap.css}">
+	<link rel="stylesheet" type="text/css" th:href="@{/css/myStyle.css}">
+</head>
+
+<body>
+	<header id="cabeza">
+		<h1>Elecciones XXXX en Colombia</h1>
+		<img th:src="@{/img/sistema-electoral.webp}" style="width:400px; display:block; margin:auto;">
+	</header>
+	<nav id="menu">
+		<ul id="opciones">
+			<li><a th:href="@{/index}">Inicio</a></li>
+			<li><a th:href="@{/index}">Opción 1</a></li>
+			<li><a th:href="@{/index}">Opción 2</a></li>
+			<li><a th:href="@{/index}">Opción 3</a></li>
+		</ul>
+	</nav>
+	<aside id="izq">
+		<p>
+			Texto descriptivo XXX Texto descriptivo XXX Texto descriptivo XXX Texto descriptivo XXX Texto descriptivo
+			XXX
+			Texto descriptivo XXX Texto descriptivo XXX Texto descriptivo XXX Texto descriptivo XXX Texto descriptivo
+			XXX
+			Texto descriptivo XXX Texto descriptivo XXX Texto descriptivo XXX Texto descriptivo XXX
+		</p>
+		<table class="table">
+			<thead>
+				<tr>
+					<th scope="col">Candidato 1</th>
+					<th scope="col">Candidato 2</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr>
+					<td>
+						<img th:src="@{/img/persona1.jpeg}" class="forImg">
+						<p>
+							Texto Descriptivo Candidato X Texto Descriptivo Candidato X Texto Descriptivo Candidato X
+							Texto
+							Descriptivo Candidato X Texto Descriptivo Candidato X Texto Descriptivo Candidato X Texto
+							Descriptivo Candidato X Texto Descriptivo Candidato X Texto Descriptivo Candidato X Texto
+							Descriptivo Candidato X Texto Descriptivo Candidato X
+						</p>
+					</td>
+					<td>
+						<img th:src="@{/img/persona2.jpeg}" class="forImg">
+						<p>
+							Texto Descriptivo Candidato X Texto Descriptivo Candidato X Texto Descriptivo Candidato X
+							Texto
+							Descriptivo Candidato X Texto Descriptivo Candidato X Texto Descriptivo Candidato X Texto
+							Descriptivo Candidato X Texto Descriptivo Candidato X Texto Descriptivo Candidato X Texto
+							Descriptivo Candidato X Texto Descriptivo Candidato X
+						</p>
+					</td>
+				</tr>
+			</tbody>
+		</table>
+		<table class="table">
+			<thead>
+				<tr>
+					<th scope="col">Candidato 3</th>
+					<th scope="col">Candidato 4</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr>
+					<td>
+						<img th:src="@{/img/persona3.webp}" class="forImg">
+						<p>
+							Texto Descriptivo Candidato X Texto Descriptivo Candidato X Texto Descriptivo Candidato X
+							Texto
+							Descriptivo Candidato X Texto Descriptivo Candidato X Texto Descriptivo Candidato X Texto
+							Descriptivo Candidato X Texto Descriptivo Candidato X Texto Descriptivo Candidato X Texto
+							Descriptivo Candidato X Texto Descriptivo Candidato X
+						</p>
+					</td>
+					<td>
+						<img th:src="@{/img/persona4.webp}" class="forImg">
+						<p>
+							Texto Descriptivo Candidato X Texto Descriptivo Candidato X Texto Descriptivo Candidato X
+							Texto
+							Descriptivo Candidato X Texto Descriptivo Candidato X Texto Descriptivo Candidato X Texto
+							Descriptivo Candidato X Texto Descriptivo Candidato X Texto Descriptivo Candidato X Texto
+							Descriptivo Candidato X Texto Descriptivo Candidato X
+						</p>
+					</td>
+				</tr>
+			</tbody>
+		</table>
+	</aside>
+	<section id="der">
+		<p>
+			<img th:src="@{/img/estadisticas.webp}" style="width:400px; display:block; margin:auto;">
+		</p>
+		<p align="center">
+			<button type="button" class="btn btn-outline-warning" style="width:200px;height:60px;">Votos por Candidato</button><br>
+			<button type="button" class="btn btn-outline-primary" style="width:200px;height:60px;">Votos por Regiones</button><br>
+			<button type="button" class="btn btn-outline-danger" style="width:200px;height:60px;">Resultado consolidado</button>
+		</p>
+	</section>
+</body>
+
+</html>
